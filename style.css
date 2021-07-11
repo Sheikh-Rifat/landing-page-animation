@@ -150,7 +150,32 @@ body {
     z-index: -1;
     transition: .4s ease-out;
 }
-.left-side button:hover::before{
+
+.left-side button:hover::before {
     width: 100%;
 }
 
+.right-side {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: -142px;
+    background: radial-gradient(500px, #F99550, transparent 50%);
+}
+
+.main-icon {
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    animation: img 3s ease infinite alternate;
+}
+
+@keyframes img {
+    0%{
+        transform: translateY(10px
+        );
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+}
